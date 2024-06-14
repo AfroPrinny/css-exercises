@@ -26,4 +26,96 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+}
+/* my solution 
+.card
+{inline-size: 500px;
+display: inline-grid;
+overflow-wrap: break-word;
+justify-content: space-between;
+height: 200px;
+padding:48px;
+position: relative;
+left:300px;
+width: 300px;
+}
+.header{
+font-size: 32px;;
+font-weight: 900px;
+font-weight: bold;
+align-items: center;
+}
+.sidebar{
+witdh: 300px;
+position: absolute;
+display: flex;
+height:800px;
+}
+ul{
+color: white;
+list-style: none;
+}
+.container{
+display: wrap;
+}
+body{
+align-items: center;
+justify-content: space-between;
+}
+.footer{
+display: flex;
+position: relative;
+top: 190px;
+align-items: center;
+justify-content: center;
+}*/
+
+/* true solution */
+body{
+display: flex;
+flex-direction: column;
+}
+.header{
+display: flex;
+align-items: cennter;
+padding: 0 16px;
+font-size: 32px;
+font-weight: 900;
+}
+.body{
+flex: 1;
+display: flex;
+}
+.sidebar{
+flex-shrink: 0;
+padding: 16px;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+li{
+margin-bottom: 16px;
+}
+a{
+color: white;
+text-decoration: none;
+font-size: 24px;
+}
+.container{
+padding: 48px;
+display: flex;
+flex-wrap: wrap;
+gap: 32px;
+}
+.card{
+padding: 16px;
+width: 300px;
+}
+.footer{
+display: flex;
+align-items: center;
+justify-content: center;
 }

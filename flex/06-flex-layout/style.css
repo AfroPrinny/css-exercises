@@ -25,3 +25,82 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* my solution
+
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;}
+
+input {
+display: block;
+margin: auto;}
+
+.buttons {
+display: block;
+margin: 0;
+position: relative;
+left: 43%;
+padding: 20px;
+}
+.header{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding:30px;
+}
+
+.footer{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+position: relative;
+top: 35%;
+padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+*/
+
+/* true solution */
+
+body{
+display: flex;
+flex-direction: column;
+}
+button {
+padding: 8px 16px;
+}
+.content{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 16px;
+}
+a {
+color: #666;
+text-decoration: none;
+}
+.header,
+.footer{
+display: flex;
+justify-content:space-between;
+padding: 16px;
+}
+.footer{
+background: #eee;
+}
+ul{
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+gap:16px;
+}
